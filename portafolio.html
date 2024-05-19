@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Portafolio Tailwind</title>
+</head>
+<!-- NOTA: EN MODO OSCURO SE VE MEJOR -->
+<body class="bg-gray-300 text-stone-900 dark:bg-gray-900 dark:text-cyan-50">
+
+<header>
+    <!-- Inicio de menu -->
+    <nav class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center">
+        <div>
+            <h2>K<span class="text-sky-600 dark:text-cyan-400">P</span></h2>
+        </div>
+        <div id="menu" class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md;:py-0 md:h-[50px] md:bg-inherit md:dark:bg-gray-900 ">
+            <ul class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full">
+                <li class="md:px-5 hover:text-blue-500"><a href="#">Home</a></li>
+                <li class="md:px-5 hover:text-blue-500"><a href="#acercade">Acerca de mi</a></li>
+                <li class="md:px-5 hover:text-blue-500"><a href="#portafolio">Portafolio</a></li>
+                <li class="md:px-5 hover:text-blue-500"><a href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- BOTON MODO OSCURO -->
+            <button id="dark">
+                <i class="bi bi-moon-stars-fill text-blue-500 text-1xl"></i>
+            </button>   
+        </div>
+        <!-- MENU HAMBURGESA -->
+        <button id="menu-button" class="absolute top-10 right-12 md:hidden">
+            <span class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
+            <span class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
+            <span class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
+        </button>
+    </nav>
+    <!-- FIN DEL MENU -->
+</header>
+
+<!-- Pagina principal -->
+<main class="flex flex-col lg:flex-row justify-center items-center lg:h-[850px] py-8 lg:py-0 w-full max-w-screen-xl mx-auto">
+    <div class="p-6 lg:p-10 lg:w-[70%] lg:h-[500px] lg:self-center">
+        <h1 class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest sm:text-3xl md:text-4xl">Soy <span class="dark:text-cyan-400">Kevin</span> Penagos</h1>
+        <div class="w-20 h-1 bg-blue-500 my-4"></div>
+        <p class="text-base sm:text-lg md:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam doloribus quae dolor quis deleniti distinctio odio quo ab fugit voluptas! Dolor voluptate ipsum vitae repellendus iste, quia minus officiis optio!</p>
+        <div class="flex space-x-4 my-4">
+            <a href="https://twitter.com/KevinPenagoss" target="_blank" class="text-blue-500 hover:text-blue-700 text-2xl">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/kevinpenagos_13/?next=%2F" target="_blank" class="text-pink-500 hover:text-pink-700 text-2xl">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://github.com/KevinPogo" target="_blank" class="text-gray-500 hover:text-gray-700 text-2xl">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+        <a download="#" href="#">
+            <button class="bg-blue-900 dark:bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-base sm:text-lg md:text-xl">Descargar CV</button>
+        </a>
+    </div>
+    <div class="lg:w-[30%] lg:h-[850px] flex justify-center items-center">
+        <img class="w-[280px] h-[400px] sm:w-[320px] sm:h-[480px] border-[6px] border-solid border-black dark:border-cyan-500 p-3 rounded-md" src="img/Kevingym.jpeg" alt="Kevin penagos foto">
+    </div>
+</main>
+
+
+<!-- Acerca de mi -->
+<main id="acercade" class="bg-gray-100 dark:bg-gray-700 w-full h-screen flex flex-col lg:flex-row justify-center items-center">
+    <div class="lg:w-[30%] lg:h-full flex justify-center items-center">
+        <img class="w-[280px] h-[400px] sm:w-[320px] sm:h-[480px] border-[6px] border-solid border-black p-3 rounded-md" src="img/kevinf.jpeg" alt="Kevin Penagos img">
+    </div>
+    <div class="p-6 lg:p-10 lg:w-[70%] lg:h-[500px] lg:self-center">
+        <h2 class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest sm:text-3xl md:text-4xl">Acerca de mí</h2>
+        <div class="w-20 h-1 bg-blue-500 my-4"></div>
+        <p class="text-base sm:text-lg md:text-xl dark:text-white text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit atque, provident ducimus velit sapiente blanditiis similique alias nemo, inventore odit aperiam praesentium totam. Sapiente distinctio rem voluptate nisi, aut optio!</p>
+        <p class="text-base sm:text-lg md:text-xl dark:text-white text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora commodi quo, sapiente laboriosam rem distinctio fugiat earum, voluptate iste voluptatibus delectus eligendi cumque voluptates dolorem consequatur! Cumque, dignissimos culpa?</p>
+        <a download="#" href="#">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-base sm:text-lg md:text-xl">Leer más</button>
+        </a>
+    </div>
+</main>
+
+<!-- Portafolio -->
+<main id="portafolio" class="w-full h-screen bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-white flex flex-col justify-center">
+    <section class="text-center py-8 lg:py-12">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-sky-600 dark:text-sky-300">Mi portafolio</h2>
+        <div class="divider w-20 h-1 bg-blue-500 my-4 mx-auto"></div>
+    </section>
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 sm:px-10 md:px-14 lg:px-20 pb-12 overflow-y-auto">
+<article class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md">
+            <div class=" h-48 bg-gray-200 dark:bg-gray-600 rounded-t-lg"></div>
+            <div class="card__title p-4">
+                <h2 class="text-xl font-bold flex justify-center pb-4">Nombre proyecto</h2>
+            </div>
+            <div class="flex justify-center space-x-4 pb-4">
+                <a href="https://www.instagram.com/kevinpenagos_13/?next=%2F" target="_blank" class="text-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300">
+                    <i class="bi bi-instagram text-2xl"></i>
+                </a>
+                <a href="https://twitter.com/KevinPenagoss" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                    <i class="bi bi-twitter text-2xl"></i>
+                </a>
+                <a href="https://github.com/KevinPogo" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                    <i class="bi bi-github text-2xl"></i>
+                </a>
+            </div>
+            <div class="flex justify-center pb-4">
+                <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-base">
+                    Detalles del proyecto
+                </a>
+            </div>            
+        </article>
+        <article class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md">
+            <div class="h-48 bg-gray-200 dark:bg-gray-600 rounded-t-lg"></div>
+            <div class=" p-4">
+                <h2 class="text-xl font-bold flex justify-center pb-4">Nombre proyecto</h2>
+            </div>
+            <div class="flex justify-center space-x-4 pb-4">
+                <a href="https://www.instagram.com/kevinpenagos_13/?next=%2F" target="_blank" class="text-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300">
+                    <i class="bi bi-instagram text-2xl"></i>
+                </a>
+                <a href="https://twitter.com/KevinPenagoss" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                    <i class="bi bi-twitter text-2xl"></i>
+                </a>
+                <a href="https://github.com/KevinPogo" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                    <i class="bi bi-github text-2xl"></i>
+                </a>
+            </div>
+            <div class="flex justify-center pb-4">
+                <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-base">
+                    Detalles del proyecto
+                </a>
+            </div>            
+        </article>
+        <article class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md">
+            <div class="h-48 bg-gray-200 dark:bg-gray-600 rounded-t-lg"></div>
+            <div class="p-4">
+                <h2 class="text-xl font-bold flex justify-center pb-4">Nombre proyecto</h2>
+            </div>
+            <div class="flex justify-center space-x-4 pb-4">
+                <a href="https://www.instagram.com/kevinpenagos_13/?next=%2F" target="_blank" class="text-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300">
+                    <i class="bi bi-instagram text-2xl"></i>
+                </a>
+                <a href="https://twitter.com/KevinPenagoss" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                    <i class="bi bi-twitter text-2xl"></i>
+                </a>
+                <a href="https://github.com/KevinPogo" target="_blank" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                    <i class="bi bi-github text-2xl"></i>
+                </a>
+            </div>
+            <div class="flex justify-center pb-4">
+                <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-base">
+                    Detalles del proyecto
+                </a>
+            </div>            
+        </article>
+    </section>
+</main>
+
+<!-- Contacto -->
+<main id="contacto" class="w-full h-screen bg-gray-100 dark:bg-gray-700 flex flex-col justify-center">
+    <div class="contact-headings text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-sky-600 dark:text-sky-300">Contacto</h2>
+        <div class="divider w-20 h-1 bg-blue-500 my-4 mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 sm:px-10 md:px-14 lg:px-20 py-8">
+        <img src="img/contactame.webp" alt="Kevin Penagos contact" class="rounded-lg shadow-md">
+        <div class="contact-form bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold mb-4">Envíame un mensaje</h4>
+            <form class="form-group flex flex-col space-y-4">
+                <input type="text" placeholder="Nombre" class="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-700 dark:text-white">
+                <input type="email" placeholder="Email" class="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-700 dark:text-white">
+                <textarea placeholder="Escribe tu mensaje aquí" class="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-700 dark:text-white"></textarea>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Envía tu mensaje</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
